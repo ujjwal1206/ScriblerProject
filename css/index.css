@@ -1,0 +1,31 @@
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.btns2 {
+    height: 50px;
+    width: 160px;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 100%;
+    background: #dab641;
+    color: black;
+    float: center;
+    margin: 10px 10px 0px 0px;
+}

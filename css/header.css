@@ -1,0 +1,28 @@
+#Title {
+    font-family: 'Georgia, serif', cursive;
+    color: rgb(17, 47, 180);
+    font-size: 45px;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;
+}
+
+.subtitle {
+    font-family: 'Montez', cursive;
+    margin-left: 10px;
+    color: black;
+}
+
+#signin,
+#signup {
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 80%;
+    margin: auto;
+    background: rgb(17, 47, 180);
+    color: whitesmoke;
+    float: right;
+    margin: 10px 10px 0px 0px;
+    font-weight: 500;
+}
