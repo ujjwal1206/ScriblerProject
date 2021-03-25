@@ -2,16 +2,101 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\postlist.css' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
-    <!-- TODO: Include code for header here -->
+<body style="background-color:#FAA41A">
+    <div class="header">
+        <div class="btns-top">
+            <button type="button" data-toggle="modal" data-target="#ModalSignin" class="signingupinbtns" id="signin">
+                Sign In
+            </button>
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+            <button type="button" data-toggle="modal" data-target="#ModalSignup" class="signingupinbtns" id="signup">
+                Sign Up
+            </button>
+            <a id="Title" class="logo">ScriBBler</a>
+            <p class="subtitle">Explore, Imagine, Create</p>
+        </div>
+        <div class="modal fade" id="ModalSignin" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="ModalLabel" style="text-align: center;">Welcome Back!</h1>
 
-    <!-- list of all posts starts here -->
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="Username">Username</label>
+                                <input type="text" class="form-control" id="Username" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Password1">Password</label>
+                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                            </div>
+                            <div class="modal-footer" style="text-align: center;">
+                                Not a member?<a data-target="#ModalSignUp" data-dismiss="modal" data-toggle="modal" href="#ModalSignUp"> Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ModalSignup" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="ModalLabel" style="color:black ;text-align: center;">Get Started</h1>
+                    </div>
+                    <div class="modal-body" style="height: 400px;">
+                        <form>
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" style="background-color : whitesmoke ;" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Username1">Username</label>
+                                <input type="text" class="form-control" id="Username1" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Password1">Password</label>
+                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Password2">Confirm Password</label>
+                                <input type="password" class="form-control" id="Password2" placeholder="Re-enter your Password" style="background-color :whitesmoke ;" required>
+                            </div>
+
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div>
 
         <!-- post 1 starts here -->
