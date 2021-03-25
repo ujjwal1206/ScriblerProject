@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
 
@@ -32,18 +31,117 @@
         </div>
         <div class="btns-mid">
             <div class="post">
-                <button type="button" class="btns2" onclick="">
+                <button type="button" class="btns2" onclick="window.location.href = './html/postslist.html';">
                     All Posts
                 </button>
-                <button type="button" class="btns2" data-toggle="modal" data-target="#createPost" id="createbtn">
+                <button type="button" class="btns2" data-toggle="modal" data-target="#postscreate" id="createbtn">
                     Create Post
                 </button>
             </div>
         </div>
+        <div class="modal fade" id="ModalSignin" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="ModalLabel" style="text-align: center;">Welcome Back!</h1>
+
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="Username">Username</label>
+                                <input type="text" class="form-control" id="Username" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Password1">Password</label>
+                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign In</button>
+                            </div>
+                            <div class="modal-footer" style="text-align: center;">
+                                Not a member?<a data-target="#ModalSignUp" data-dismiss="modal" data-toggle="modal" href="#ModalSignUp"> Sign Up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ModalSignup" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h1 class="modal-title" id="ModalLabel" style="color:black ;text-align: center;">Get Started</h1>
+                    </div>
+                    <div class="modal-body" style="height: 400px;">
+                        <form>
+
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" style="background-color : whitesmoke ;" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Username1">Username</label>
+                                <input type="text" class="form-control" id="Username1" placeholder="Enter your username" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Password1">Password</label>
+                                <input type="password" class="form-control" id="Password1" placeholder="Enter your password" style="background-color :whitesmoke ;" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Password2">Confirm Password</label>
+                                <input type="password" class="form-control" id="Password2" placeholder="Re-enter your Password" style="background-color :whitesmoke ;" required>
+                            </div>
+
+                            <div class="modal-signin-container">
+                                <button type="submit" class="btn btn-success btn-block">Sign Up</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-
-
+    <div class="posts">
+        <div class="postbtns">
+            <div class="modal fade bd-example-modal-lg" role="dialog" id="postscreate">
+                <div class="modal-dialog  modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                              <span style="color:black">&times;</span>
+                            </button>
+                            <h1 class="modal-title" style="text-align: center;">Pen Your Post</h1>
+                        </div>
+                        <form>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="Title">Title</label>
+                                    <input type="text" class="form-control" id="posttitle" placeholder="Enter title for your post" style="background-color :whitesmoke; width: 425px;" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Content">Contents</label>
+                                    <textarea rows="10" cols="50" class="form-control" id="postcontent" placeholder="Enter the contents for your post" style="background: whitesmoke;" required></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success">Create</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
