@@ -48,7 +48,7 @@
                                 <button type="submit" class="btn btn-success btn-block">Sign In</button>
                             </div>
                             <div class="modal-footer" style="text-align: center;">
-                                Not a member?<a data-target="#ModalSignUp" data-dismiss="modal" data-toggle="modal" href="#ModalSignUp"> Sign Up</a>
+                                Not a member?<a data-target="#ModalSignup" data-dismiss="modal" data-toggle="modal" href="">Sign Up</a>
                             </div>
                         </form>
                     </div>
@@ -109,7 +109,7 @@
                 <div>
                     <div class="postbodyheading">
                         <span class="postbodyheadingcontent" id="h1">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
-                        <span class="trash-button" data-toggle="modal" data-target="#YesNo1">
+                        <span class="trash-button" data-toggle="modal" data-target="#YesNo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                                 <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
                                 <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
@@ -118,27 +118,12 @@
                     </div>
                 </div>
                 <span class="posttext" id="c1">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</span>
-                <span class="ellipsis" onclick=open(writer1,h1,c1)>
-                    <i style="font-size: 20px;" class="fa">...</i>
+                <span class="ellipsis" onclick="open1(writer1,h1,c1)">
+                    <i style="font-size: 25px; ">...</i>
                 </span>
             </div>
 
-            <div id="YesNo1" class="modal fade">
-                <div class="modal-dialog " style="height: 10px; width:350px;">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 id="confirmyesno" class="modal-title">
-                                Are you sure you want to delete this post?</h1>
 
-                        </div>
-
-                        <div class="modal-footer">
-                            <button id="btnYes" class="btn btn-success" style="margin-right: 200px;" data-dismiss="modal" onclick="remove('post1')">Yes</button>
-                            <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- post 1 ends here -->
 
@@ -152,85 +137,55 @@
                 <div>
                     <div class="postbodyheading">
                         <span class="postbodyheadingcontent" id="h2">What is linting and how can it save you time?</span>
-                        <span class="trash-button" data-toggle="modal" data-target="#YesNo2">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        <span class="trash-button" data-toggle="modal" data-target="#YesNo">
+                            <svg xmlns="http://www.w3.org/2000/svg " width="16" height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
+                                <path fill-rule="evenodd " d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0
+                    0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z "/>
                               </svg>
                         </span>
                     </div>
                 </div>
                 <span class="posttext" id="c2">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</span>
-                <span class="ellipsis" onclick=open(writer2,h2,c2)>
-                    <i style="font-size:20px" class="fa">...</i>
+                <span class="ellipsis" onclick="open1(writer2,h2,c2)">
+                    <i style="font-size:25px">...</i>
                 </span>
             </div>
 
-            <div id="YesNo2" class="modal fade">
-                <div class="modal-dialog " style="height: 10px; width:350px;">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 id="confirmyesno" class="modal-title">
-                                Are you sure you want to delete this post?</h1>
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button id="btnYes" class="btn btn-success" style="margin-right: 200px;" data-dismiss="modal" onclick="remove('post2')">Yes</button>
-                            <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div class="postcard" id="post3">
-            <div class="sidesquare">
-                <span class="sidesquarecontent" id="writer3">Yazeed Bzadough</span>
+        <div class="postcard " id="post3">
+            <div class="sidesquare ">
+                <span class="sidesquarecontent " id="writer3">Yazeed Bzadough</span>
             </div>
 
-            <div class="postbody">
+            <div class="postbody ">
                 <div>
                     <div class="postbodyheading">
                         <span class="postbodyheadingcontent" id="h3">How to Get More Views on Your Tech Blog</span>
-                        <span class="trash-button" data-toggle="modal" data-target="#YesNo3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        <span class="trash-button" data-toggle="modal" data-target="#YesNo">
+                            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
+                                <path fill-rule="evenodd " d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0
+                    0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z "/>
                               </svg>
                         </span>
                     </div>
                 </div>
                 <span class="posttext" id="c3">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</span>
-                <span class="ellipsis" onclick=open(writer3,h3,c3)>
-                    <i style="font-size:20px" class="fa">...</i>
+                <span class="ellipsis" onclick="open1(writer3,h3,c3)">
+                    <i style="font-size:25px">...</i>
                 </span>
             </div>
 
-            <div id="YesNo3" class="modal fade">
-                <div class="modal-dialog " style="height: 10px; width:350px;">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 id="confirmyesno" class="modal-title">
-                                Are you sure you want to delete this post?</h1>
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button id="btnYes" class="btn btn-success" style="margin-right: 200px;" data-dismiss="modal" onclick="remove('post3')">Yes</button>
-                            <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
         <div class="postcard" id="post4">
-            <div class="sidesquare">
+            <div class="sidesquare ">
                 <span class="sidesquarecontent" id="writer4">Cedd Burge</span>
             </div>
 
@@ -238,36 +193,20 @@
                 <div>
                     <div class="postbodyheading">
                         <span class="postbodyheadingcontent" id="h4">How to write easily describable code</span>
-                        <span class="trash-button" data-toggle="modal" data-target="#YesNo4">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        <span class="trash-button " data-toggle="modal" data-target="#YesNo">
+                            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
+                                <path fill-rule="evenodd " d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0
+                    0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z "/>
                               </svg>
                         </span>
                     </div>
                 </div>
                 <span class="posttext" id="c4">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</span>
-                <span class="ellipsis" onclick=open(writer4,h4,c4)>
-                    <i style="font-size:30px" class="fa">...</i>
+                <span class="ellipsis" onclick="open1(writer4,h4,c4)">
+                    <i style="font-size:24px">...</i>
                 </span>
-            </div>
-
-            <div id="YesNo4" class="modal fade">
-                <div class="modal-dialog " style="height: 10px; width:350px;">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 id="confirmyesno" class="modal-title">
-                                Are you sure you want to delete this post?</h1>
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button id="btnYes" class="btn btn-success" style="margin-right: 200px;" data-dismiss="modal" onclick="remove('post4')">Yes</button>
-                            <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- post 4 ends here -->
@@ -278,51 +217,45 @@
                 <span class="sidesquarecontent" id="writer5">Srishti Gupta</span>
             </div>
 
-            <div class="postbody">
+            <div class="postbody ">
                 <div>
                     <div class="postbodyheading">
                         <span class="postbodyheadingcontent" id="h5">Everything you should know about ‘module’ & ‘require’ in Node.js</span>
-                        <span class="trash-button" data-toggle="modal" data-target="#YesNo5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        <span class="trash-button" data-toggle="modal" data-target="#YesNo">
+                            <svg xmlns="http://www.w3.org/2000/svg " width="16 " height="16 " fill="currentColor " class="bi bi-trash " viewBox="0 0 16 16 ">
+                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z "/>
+                                <path fill-rule="evenodd " d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4L4 4.059V13a1 1 0 0 0 1 1h6a1 1 0
+                    0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z "/>
                               </svg>
                         </span>
                     </div>
                 </div>
                 <span class="posttext" id="c5">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</span>
-                <span class="ellipsis" onclick=open(writer5,h5,c5)>
-                    <i style="font-size:24px" class="fa">...</i>
+                <span class="ellipsis" onclick="open1(writer5,h5,c5)">
+                    <i style="font-size:24px">...</i>
                 </span>
             </div>
 
-            <div id="YesNo5" class="modal fade">
-                <div class="modal-dialog " style="height: 10px; width:350px;">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 id="confirmyesno" class="modal-title">
-                                Are you sure you want to delete this post?</h1>
-
-                        </div>
-
-                        <div class="modal-footer">
-                            <button id="btnYes" class="btn btn-success" style="margin-right: 200px;" data-dismiss="modal" onclick="remove(post5)">Yes</button>
-                            <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- post 5 ends here -->
 
     </div>
     <!-- list of all posts ends here -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script src="..\Javascript\postlist.js"></script>
+    <div id="YesNo" class="modal fade">
+        <div class="modal-dialog " style="height: 10px; width:350px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <br>
+                    <p id="confirmyesno" class="modal-title" style="font-size: 16px; font:bold">
+                        Are you sure you want to delete this post?</p><br>
+                    <button id="btnYes" class="btn btn-success">Yes</button>
+                    <button id="btnNo" class="btn btn-danger" data-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="..\Javascript\postlist.js "></script>
 </body>
 
 </html>

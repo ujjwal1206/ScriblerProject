@@ -1,0 +1,18 @@
+#comments {
+    margin: 10px;
+    width: 680px;
+    height: 157px;
+    background-color: white;
+}
+
+.writer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.writername {
+    font-family: 'italic';
+    font-size: 20px;
+    width: 50%;
+}

@@ -21,8 +21,8 @@ body {
     width: 160px;
     padding: 10px;
     border-radius: 2px;
+    align-items: center;
     cursor: pointer;
-    font-weight: 500;
     font-size: 100%;
     background: goldenrod;
     color: black;
