@@ -1,9 +1,9 @@
 #Title {
     font-family: 'Georgia, serif', cursive;
     color: rgb(17, 47, 180);
-    font-size: 45px;
     margin: auto;
     text-decoration: none;
+    font-size: 45px;
     margin: 10px 10px 0px 10px;
 }
 
@@ -24,5 +24,4 @@
     color: whitesmoke;
     float: right;
     margin: 10px 10px 0px 0px;
-    font-weight: 500;
 }
