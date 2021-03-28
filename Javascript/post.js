@@ -73,3 +73,11 @@ function count1() {
     }
 
 }
+
+function Coment() {
+    var comment = document.getElementById("comments");
+    if (comment.value != '') {
+        document.getElementById("c2").innerHTML += "<div id=\"c1\">" + comment.value + "</div>";
+        comment.value = "";
+    }
+}
